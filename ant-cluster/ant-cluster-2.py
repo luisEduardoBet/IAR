@@ -319,15 +319,15 @@ if __name__ == "__main__":
             desc3 = f"ALPHA: {alpha[j]} | K1: {k1[j]} | K2: {k2[j]}"
 
             grid.initialize_matriz()
-            grid.create_items("./dataset-4.txt")
+            grid.create_items("./dataset-15.txt")
             grid.populate_ants(NUM_ANTS, RADIUS)
 
 
-            plotting(grid, f"./4grupos/antes/teste_{k}.png", "Estado Inicial", desc2, desc3)
+            plotting(grid, f"./15grupos/antes/teste_{k}.png", "Estado Inicial", desc2, desc3)
 
             grid.run(i)
 
-            plotting(grid, f"./4grupos/depois/teste_{k}.png", "Estado Final", desc2, desc3)
+            plotting(grid, f"./15grupos/depois/teste_{k}.png", "Estado Final", desc2, desc3)
             j+=1
             k+=1
 
